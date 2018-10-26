@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Seting_Windows</class>
+ <widget class="QDialog" name="Seting_Windows">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>305</width>
+    <height>230</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="modal">
+   <bool>false</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_Min_Speed">
+     <property name="text">
+      <string>Emoji最小速度</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label_Max_Speed">
+     <property name="text">
+      <string>Emoji最大速度</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="lineEdit_Max_Speed">
+     <property name="text">
+      <string>7</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="lineEdit_Min_Speed">
+     <property name="text">
+      <string>2</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0" colspan="2">
+    <widget class="QPushButton" name="Btn_Set_Confirm">
+     <property name="text">
+      <string>确认</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QSlider" name="Frame_Ratr_Slider">
+     <property name="minimum">
+      <number>50</number>
+     </property>
+     <property name="maximum">
+      <number>150</number>
+     </property>
+     <property name="singleStep">
+      <number>10</number>
+     </property>
+     <property name="pageStep">
+      <number>20</number>
+     </property>
+     <property name="value">
+      <number>60</number>
+     </property>
+     <property name="sliderPosition">
+      <number>60</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="invertedAppearance">
+      <bool>false</bool>
+     </property>
+     <property name="invertedControls">
+      <bool>false</bool>
+     </property>
+     <property name="tickPosition">
+      <enum>QSlider::TicksAbove</enum>
+     </property>
+     <property name="tickInterval">
+      <number>25</number>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,1">
+     <item>
+      <widget class="QLabel" name="Frame_Ratr_label">
+       <property name="text">
+        <string>帧率</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="Ratr_label">
+       <property name="text">
+        <string>60</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="3" column="1">
+    <widget class="QLineEdit" name="lineEdit_Max_Size">
+     <property name="text">
+      <string>150</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_Max_Size">
+     <property name="text">
+      <string>Emoji最大尺寸</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_Max_Num">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Emoji最大数量</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLineEdit" name="lineEdit_Max_Num">
+     <property name="text">
+      <string>21</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_Score">
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 16, 120);</string>
+     </property>
+     <property name="text">
+      <string>💗</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QProgressBar" name="LOVE_progress">
+     <property name="styleSheet">
+      <string notr="true">QProgressBar::chunk {
+   
+	background-color: rgb(255, 16, 120);
+   width: 20px;
+}
+QProgressBar {
+   border: 2px solid grey;
+   border-radius: 5px;
+   text-align: center;
+}
+QProgressBar {
+   border: 2px solid grey;
+   border-radius: 5px;
+   background-color: #FFFFFF;
+}</string>
+     </property>
+     <property name="maximum">
+      <number>100</number>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+     <property name="textVisible">
+      <bool>true</bool>
+     </property>
+     <property name="invertedAppearance">
+      <bool>false</bool>
+     </property>
+     <property name="format">
+      <string notr="true">%p%</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Frame_Ratr_Slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>Ratr_label</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>145</x>
+     <y>103</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>91</x>
+     <y>113</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icon/huaji.png</file>
+        <file>icon/delete_64.png</file>
+        <file>icon/gear_64.png</file>
+        <file>icon/label_64.png</file>
+        <file>icon/trash_64.png</file>
+        <file>icon/bitbug_favicon.ico</file>
+        <file>icon/Black.png</file>
+        <file>icon/Congratulation.png</file>
+        <file>Background/denebola.jpeg</file>
+        <file>Background/test1.jpg</file>
+        <file>Background/1_aura.jpg</file>
+        <file>Background/earth2584-ii.jpg</file>
+        <file>Background/praedestinatio.jpg</file>
+        <file>Background/sojourn.jpg</file>
+        <file>icon/buy_64.png</file>
+        <file>icon/poe_face_arf-icon.png</file>
+        <file>icon/chain-link.png</file>
+        <file>Background/carcharoth.jpg</file>
+        <file>Background/eclipse.jpg</file>
+        <file>Background/ordinary-morning.jpg</file>
+        <file>icon/Heart.jpg</file>
+        <file>icon/Love.png</file>
+    </qresource>
+</RCC>
